@@ -1,6 +1,6 @@
 # A* search algorithm in circle maze
 
-Visualization the A* algorithm and Dijkstra algorithm for pathfinding in circle maze. 
+Visualization of the A* algorithm and Dijkstra algorithm for pathfinding in circle maze.
 
 ## Tech Stack
 - [NumPy](https://numpy.org/)
