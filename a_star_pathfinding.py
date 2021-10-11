@@ -1,12 +1,8 @@
-import sys
-
 import pygame
 import time
 import os
 import numpy as np
 import random
-import ch03
-import matplotlib.pyplot as plt
 import heapq
 import collections
 
@@ -143,7 +139,7 @@ def calculate(grid, x, y, nx, ny):
     return dx + dy
 
 
-def draw_dist_a_start(grid, start, end, is_draw=False, is_BFS=False):
+def draw_dist_a_start(grid, start, end, is_draw=False, is_Dijkstra =False):
     walls = grid.walls
     grid = grid.grid
 
@@ -222,7 +218,7 @@ def draw_dist_a_start(grid, start, end, is_draw=False, is_BFS=False):
                 nx, ny = next_node.row, next_node.col
 
                 ng = cell_to_g[curr] + calculate(grid, x, y, nx, ny)
-                nh = 0 if is_BFS else calculate(grid, nx, ny, er, ec)
+                nh = 0 if is_Dijkstra else calculate(grid, nx, ny, er, ec)
                 nf = ng + nh
 
                 if next_node in cell_to_f and nf >= cell_to_f[next_node]:
@@ -400,12 +396,9 @@ char_to_pos = {
 }
 
 
-def run_maze(start_type, end_type, cnt):
+def run_maze(start_type, end_type):
     start = char_to_pos[start_type] if start_type != "random" else get_rand_pos()
     end = char_to_pos[end_type] if end_type != "random" else get_rand_pos()
-
-    if cnt == 0:
-        recursion(grid.grid, grid.walls)
 
     is_draw = True
     draw_dist_a_start(grid, start, end, is_draw)
@@ -419,6 +412,6 @@ end_type = "right"
 grid = Pygrid(Distances, n, cell_size)
 recursion(grid.grid, grid.walls)
 
-run_maze(start_type, end_type, 1)
-run_maze(end_type, start_type, 1)
+run_maze(start_type, end_type)
+run_maze(end_type, start_type)
 
