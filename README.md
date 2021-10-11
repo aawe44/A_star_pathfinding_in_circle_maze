@@ -1,6 +1,6 @@
 # A_star_pathfinding_in_circle_maze
 
-Visualization the A* and Dijkstra pathfinding in circle maze. 
+Visualization the A* algorithm and Dijkstra algorithm for pathfinding in circle maze. 
 
 ## Tech Stack
 - [NumPy](https://numpy.org/)
@@ -11,23 +11,18 @@ Visualization the A* and Dijkstra pathfinding in circle maze.
 
 ## Screenshot
 
-![Screen 1](https://github.com/aawe44/pic_covid19_map/blob/main/covid19_map_t1.gif)
-
-
-|![County Level](https://github.com/aawe44/pic_covid19_map/blob/main/image_county.png)|![State Level](https://github.com/aawe44/pic_covid19_map/blob/main/image_state.png)
+A* search algorithm
+|Center to Edge | Edge to Center|
 |---------------------------------------------|---------------------------------------------|
-|County Level |State Level|
+|![Center to Edge](https://github.com/aawe44/pic_for_a_star_pathfinding_in_circle_maze/blob/main/a_star_center_to_right.gif)|![Edge to Center](https://github.com/aawe44/pic_for_a_star_pathfinding_in_circle_maze/blob/main/a_star_right_to_center.gif)
+
+Dijkstra's algorithm
+|Center to Edge | Edge to Center|
+|---------------------------------------------|---------------------------------------------|
+|![Center to Edge](https://github.com/aawe44/pic_for_a_star_pathfinding_in_circle_maze/blob/main/pathfinding_center_to_right.gif)|![Edge to Center](https://github.com/aawe44/pic_for_a_star_pathfinding_in_circle_maze/blob/main/pathfinding_right_to_center.gif)
 
 
-## Getting Started
-### Install (First time only)
-```
-npm install       
-```
-### Usage
-```
-npm start       
-```
+
 
 ## Author
 
