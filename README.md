@@ -1,4 +1,4 @@
-# A_star_pathfinding_in_circle_maze
+# A* algorithm in circle maze
 
 Visualization the A* algorithm and Dijkstra algorithm for pathfinding in circle maze. 
 
