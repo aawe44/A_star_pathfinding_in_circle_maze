@@ -10,7 +10,6 @@ Visualization of the A* algorithm and Dijkstra algorithm for pathfinding in circ
 - [Dijkstra's algorithm](https://en.wikipedia.org/wiki/Dijkstra%27s_algorithm)
 
 ## Screenshot
-
 A* search algorithm
 |Center to Edge | Edge to Center|
 |---------------------------------------------|---------------------------------------------|
@@ -21,7 +20,10 @@ Dijkstra's algorithm
 |---------------------------------------------|---------------------------------------------|
 |![Center to Edge](https://github.com/aawe44/pic_for_a_star_pathfinding_in_circle_maze/blob/main/pathfinding_center_to_right.gif)|![Edge to Center](https://github.com/aawe44/pic_for_a_star_pathfinding_in_circle_maze/blob/main/pathfinding_right_to_center.gif)
 
-
+## Follow up
+Maze on sphere
+<br><br>
+<img src="https://github.com/aawe44/pic_for_a_star_pathfinding_in_circle_maze/blob/main/sphere_maze.gif" width="500">
 
 
 ## Author
